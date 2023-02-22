@@ -21,7 +21,7 @@ def play_game():
         board[move] = turn
         count += 1
         # Checking if someone has won makes sense between 5 and 9 turns
-        if 5 <= count <= 9:
+        if 5 <= count < 9:
             playing = game_over(board=board, turn=turn)
         if count == 9:
             print("It's a tie!")
